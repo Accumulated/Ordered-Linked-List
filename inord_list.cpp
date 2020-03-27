@@ -400,9 +400,7 @@ bool list :: LinkedList_Search(const listelementType &e, int mode)
 			for(int i = 0; i < Real_NumberOfWords; i++)
 			{
 				// Patern check
-				x = (ptr_tmp -> item).find(e);
-
-				if(x != string::npos)
+				if((ptr_tmp -> item).find(e) != string:: npos)
 				{
 					if(I_Need_A_New_Line == true)
 					{
@@ -431,9 +429,8 @@ bool list :: LinkedList_Search(const listelementType &e, int mode)
 			for(int i = 0; i < Real_NumberOfWords; i++)
 			{
 				// Patern check
-				x = (ptr_tmp -> item).find(e);
 
-				if(x != string::npos)
+				if((ptr_tmp -> item).find(e) != string::npos)
 				{
 					if(I_Need_A_New_Line == true)
 					{
